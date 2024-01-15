@@ -1,8 +1,3 @@
-# Broadcaster
-A plugin to broadcast messages to all players
-
-# Config
-```yaml
 # The below config message will show up before the messages declared below (NOTE: You can use & for color coding but none of the other variables described above)
 prefix: "&8[&l&6Broadcaster&r&8] &f"
 
@@ -27,7 +22,3 @@ messages:
   - "Welcome to Your Network"
   - "Don't forget to vote this server in https://yourserver.com/vote"
   - "Buy ranks and other things at https://yourserver.com/store"
-```
-
-# Issue
-Found an error? Create an issue [here](https://github.com/AraaCuteUwU/Broadcaster/issues)
