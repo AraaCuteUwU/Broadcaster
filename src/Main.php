@@ -47,17 +47,15 @@ class Main extends PluginBase
     }
 
     protected function broadcastSound(string $soundName): void {
-//        if ($this->getConfig()->get("broadcast_sound") !== "") {
-            foreach ($this->getServer()->getOnlinePlayers() as $player) {
-                $player->getNetworkSession()->sendDataPacket(PlaySoundPacket::create(
-                    $soundName,
-                    $player->getPosition()->getX(),
-                    $player->getPosition()->getY(),
-                    $player->getPosition()->getZ(),
-                    100,
-                    1
-                ));
-            }
-//        }
+        foreach ($this->getServer()->getOnlinePlayers() as $player) {
+            $player->getNetworkSession()->sendDataPacket(PlaySoundPacket::create(
+                $soundName,
+                $player->getPosition()->getX(),
+                $player->getPosition()->getY(),
+                $player->getPosition()->getZ(),
+                100,
+                1
+            ));
+        }
     }
 }
